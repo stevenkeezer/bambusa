@@ -11,4 +11,56 @@ section:nth-child(odd) {
     background-color: gray;
 }
 
+.about-us {
+    height: 100%;
+    /* background-color: aqua; */
+    text-align: center;
+}
+
+.center-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid red; */
+    justify-content: space-around;
+    padding:10px 0 0 0;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+.footer-full-width {
+    width: 100%;
+}
+
+.icon-custom {
+    font-size:20px;
+}
+
+.icon-custom a{
+    color: black;
+}
+
+.image-cover {
+
+}
+
+.cat-one {
+    background-image: url("https://d17fnq9dkz9hgj.cloudfront.net/uploads/2012/11/152964589-welcome-home-new-cat-632x475.jpg");
+    background-size: cover;
+}
+
+.cat-one {
+    
+}
+
+.cat-one {
+    
+}
+
+.cat-one {
+    
+}
+
+
+
+
 
