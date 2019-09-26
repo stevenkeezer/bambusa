@@ -1,8 +1,14 @@
 body {
-    background-color: red;
+    /* background-color: red; */
 }
 
 section {
     height: 800px;
+    background-color: white;
+}
+section:nth-child(odd) {
+    height: 800px;
     background-color: gray;
 }
+
+
