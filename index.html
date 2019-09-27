@@ -1,44 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#">Hidden brand</a>
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about-us">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#">Hidden brand</a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link disabled"
+              href="#"
+              tabindex="-1"
+              aria-disabled="true"
+              >Disabled</a
+            >
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+
     </nav>
 
     <header>
+
             <div class="overlay"></div>
             <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
               <source src="videos/bambus.mp4" type="video/mp4">
@@ -55,127 +86,129 @@
           </header>
 
 
+
     <section>
-        <h1>Mission section</h1>
+      <h1>Mission section</h1>
     </section>
 
     <nav class="product-filter">
-        <h1>Products</h1>
 
-        <div class="sort">
-            <div class="collection-sort">
-                <label>Filter by:</label>
-                <select>
-                    <option value="/">All Jackets</option>
-                    <option value="/">2016</option>
-                    <option value="/">jacket</option>
-                    <option value="/">Jackets</option>
-                    <option value="/">layers</option>
-                    <option value="/">Obermeyer</option>
-                    <option value="/">Roxy</option>
-                    <option value="/">womens</option>
-                </select>
-            </div>
+      <h1>Products</h1>
 
-            <div class="collection-sort">
-                <label>Sort by:</label>
-                <select>
-                    <option value="/">Featured</option>
-                    <option value="/">Best Selling</option>
-                    <option value="/">Alphabetically, A-Z</option>
-                    <option value="/">Alphabetically, Z-A</option>
-                    <option value="/">Price, low to high</option>
-                    <option value="/">Price, high to low</option>
-                    <option value="/">Date, new to old</option>
-                    <option value="/">Date, old to new</option>
-                </select>
-            </div>
+      <div class="sort">
+        <div class="collection-sort">
+          <label>Filter by:</label>
+          <select>
+            <option value="/">Clothing</option>
+            <option value="/">Cookware</option>
+            <option value="/">Furniture</option>
+            <option value="/">Miscellaneous</option>
+          </select>
         </div>
+
+        <div class="collection-sort">
+          <label>Sort by:</label>
+          <select>
+            <option value="/">Featured</option>
+            <option value="/">Best Selling</option>
+            <option value="/">Price, low to high</option>
+            <option value="/">Price, high to low</option>
+            <option value="/">Oldest</option>
+            <option value="/">Newest</option>
+          </select>
+        </div>
+      </div>
     </nav>
 
     <section class="products mx-auto" style="max-width: 990px">
-        <div class="product-card">
-            <div class="product-image">
-                <img src="45924-5-bamboo-furniture-free-photo-png_600x600.png">
-            </div>
-            <div class="product-info">
-                <h5>Bamboo Chair</h5>
-                <h6>$99.99</h6>
-            </div>
+      <img
+        style="position: absolute; width:50%; z-index: -1; right: 0; margin-right: -430px; margin-top: -100px"
+        src="img/bamboo-background.png"
+      />
+      <div class="product-card">
+        <div class="product-image">
+          <img src="img/bamboo-chair.png" />
         </div>
-
-        <div class="product-card">
-            <div class="product-image text-center">
-                <img style="width:75%;" src="7-acoustic-wooden-guitar-png-image.png">
-            </div>
-            <div class="product-info">
-                <h5>Bamboo Guitar</h5>
-                <h6>$99.99</h6>
-            </div>
+        <div class="product-info">
+          <h5>Bamboo Chair</h5>
+          <h6>$99.99</h6>
         </div>
+      </div>
 
-        <div class="product-card">
-            <div class="product-image text-center">
-                <img src="35316-2-wooden-spoon-transparent.png">
-            </div>
-            <div class="product-info">
-                <h5>Bamboo Spoon</h5>
-                <h6>$99.99</h6>
-            </div>
+      <div class="product-card">
+        <div class="product-image text-center">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0203/1620/products/017611_condiment-Cups_1000x1000-bambu_576x576_crop_center.png?v=1553274935 1.00x"
+          />
         </div>
-
-        <div class="product-card">
-            <div class="product-image text-center">
-                <img src="i3kWghZmJcu8qF51196GEFYvc.png">
-            </div>
-            <div class="product-info">
-                <h5>Womens Shoes</h5>
-                <h6>$99.99</h6>
-            </div>
+        <div class="product-info">
+          <h5>Cooking Bowl</h5>
+          <h6>$99.99</h6>
         </div>
+      </div>
 
-        <div class="product-card">
-            <div class="product-image text-center">
-                <img src="45531-6-bamboo-furniture-image-png-download-free.png">
-            </div>
-            <div class="product-info">
-                <h5>Winter Jacket</h5>
-                <h6>$99.99</h6>
-            </div>
+      <div class="product-card">
+        <div class="product-image text-center">
+          <img src="img/cutting-board.png" />
         </div>
-
-
-        <div class="product-card">
-            <div class="product-image text-center">
-                <img src="45543-5-bamboo-furniture-free-transparent-image-hd.png">
-            </div>
-            <div class="product-info">
-                <h5>Winter Jacket</h5>
-                <h6>$99.99</h6>
-            </div>
+        <div class="product-info">
+          <h5>Cutting Board</h5>
+          <h6>$99.99</h6>
         </div>
+      </div>
 
-        <div class="product-card">
-            <div class="product-image text-center">
-                <img src="84919-royal-jelly-bee-honey-tableware-serveware.png">
-            </div>
-            <div class="product-info">
-                <h5>Winter Jacket</h5>
-                <h6>$99.99</h6>
-            </div>
+      <div class="product-card">
+        <div class="product-image text-center">
+          <img src="img/spoon.png" />
         </div>
-
-        <div class="product-card">
-            <div class="product-image text-center">
-                <img style="width: 80%"
-                    src="https://cdn.shopify.com/s/files/1/0938/8938/products/10231100205_1_1315x1800_300_CMYK_1024x1024.jpeg?v=1445623369">
-            </div>
-            <div class="product-info">
-                <h5>Winter Jacket</h5>
-                <h6>$99.99</h6>
-            </div>
+        <div class="product-info">
+          <h5>Spoon</h5>
+          <h6>$99.99</h6>
         </div>
+      </div>
 
+      <div class="product-card">
+        <div class="product-image text-center">
+          <img src="https://cdn.shopify.com/s/files/1/0203/1620/products/055100_main_1000x1000_scaled-bambu_576x576_crop_center.png?v=1553275242%201.00x" />
+        </div>
+        <div class="product-info">
+          <h5>Pot Scrapers</h5>
+          <h6>$99.99</h6>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image text-center">
+          <img src="https://cdn.shopify.com/s/files/1/0203/1620/products/056570_straws_2018_RESIZED-bambu_512x512_crop_center.png?v=1568656031 1.00x" />
+        </div>
+        <div class="product-info">
+          <h5>Bamboo Straws</h5>
+          <h6>$99.99</h6>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image text-center">
+          <img src="https://cdn.shopify.com/s/files/1/0203/1620/products/133900_Cork_Fabric_Utensil_Travel_Set_-_bambu_512x512_crop_center.jpg?v=1568656150 1.00x" />
+        </div>
+        <div class="product-info">
+          <h5>Camping Utensils</h5>
+          <h6>$99.99</h6>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image text-center">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0203/1620/products/055920_main_1000x1000_scaled-bambu_576x576_crop_center.png?v=1553275202 1.00x"
+          />
+        </div>
+        <div class="product-info">
+          <h5>Sporks</h5>
+          <h6>$99.99</h6>
+        </div>
+      </div>
+        
     </section>
 
     <div class="container about-us">
@@ -286,7 +319,7 @@
         </div><!-- /.row -->
     </div>
     <section>
-        <h2>Contact US</h2>
+      <h2>About Us</h2>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -302,3 +335,4 @@
 </body>
 
 </html>
+
