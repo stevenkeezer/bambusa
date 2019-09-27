@@ -559,6 +559,10 @@ ul {
     border-left: 1px solid white;
     margin-bottom: 10px;
   }
+
+  .icon-custom {
+    justify-content: center;
+  }
 }
 /* end about us  */
 
