@@ -1,3 +1,29 @@
+
+body {
+  padding-top: 0px;
+}
+
+a {
+    
+  color:#fff !important;
+  
+}
+.nav-item {
+  font-family: Century Gothic;
+  margin: 0 auto;
+  padding: 1em 1em;
+  text-align: center;
+
+}
+.nav-item a {
+  color: #FFF;
+  text-decoration: none;
+  font: 16px Century Gothic;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+
 }
 section {
   min-height: 600px;
@@ -26,19 +52,6 @@ p {
   font-family: montserrat;
 }
 
-
-/* Top & Bottom Borders Out */
-.topBotomBordersOut a:before, .topBotomBordersOut a:after {
-  position: absolute;
-  left: 0px;
-  width: 100%;
-  height: 2px;
-  background: #FFF;
-  content:"";
-  opacity: 0;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
 .topBotomBordersOut a:before {
   top: 0px;
   transform: translateY(10px);
@@ -47,7 +60,8 @@ p {
   bottom: 0px;
   transform: translateY(-10px);
 }
-.topBotomBordersOut a:hover:before, .topBotomBordersOut a:hover:after {
+.topBotomBordersOut a:hover:before,
+.topBotomBordersOut a:hover:after {
   opacity: 1;
   transform: translateY(0px);
 }
@@ -163,7 +177,6 @@ body {
   overflow-x: hidden;
 
   padding-top: 0px;
-
 }
 ol,
 ul {
@@ -263,6 +276,7 @@ label {
 .product-image {
   position: relative;
   overflow: hidden;
+  width: 120%;
 }
 .product-image:hover img {
   transform: scale(1.1);
@@ -614,4 +628,11 @@ h6 {
     opacity: 0.5;
     z-index: 1;
   }
+
+@media (max-width: 500px) {
+  .product-header {
+    font-size: 1rem !important;
+  }
 }
+/* *** END PRODUCT SECTION *** */
+
