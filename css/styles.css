@@ -68,7 +68,7 @@ section {
 body {
   line-height: 1;
   padding-top: 65px;
-  overflow-x: hidden
+  overflow-x: hidden;
 }
 ol,
 ul {
@@ -402,9 +402,10 @@ label {
   text-align: center;
 }
 
-.product-info > h5, h6 {
+.product-info > h5,
+h6 {
   font-weight: 400;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 @media (max-width: 920px) {
