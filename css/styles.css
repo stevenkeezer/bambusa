@@ -1,3 +1,24 @@
+a{
+    
+  color:#fff !important;
+  
+}
+.nav-item {
+  font-family: Century Gothic;
+  margin: 0 auto;
+  padding: 1em 1em;
+  text-align: center;
+}
+.nav-item a {
+  color: #FFF;
+  text-decoration: none;
+  font: 16px Century Gothic;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+
+}
 section {
   min-height: 600px;
   height: auto;
@@ -26,11 +47,7 @@ p {
 }
 
 
-/* navbar *
-
 /* Top & Bottom Borders Out */
-
-
 .topBotomBordersOut a:before, .topBotomBordersOut a:after {
   position: absolute;
   left: 0px;
@@ -84,9 +101,29 @@ p {
   margin: 100px;
 }
 
-/* Header section */
 
 header {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
   position: relative;
   background-color: black;
   height: 100vh;
@@ -374,6 +411,7 @@ label {
 
 .footer-full-width {
   width: 100%;
+  color: black;
 }
 
 .icon-custom {
@@ -382,7 +420,7 @@ label {
   padding-left: 20px;
 }
 
-.icon-custom a {
+.icon-custom i {
   color: black;
 }
 
@@ -402,6 +440,10 @@ label {
   margin: 0;
 }
 
+.card-body > h2,p {
+  color: black;
+}
+
 .card-body hr {
   border: 0;
   height: 1px;
@@ -415,6 +457,18 @@ label {
 
 .cat-one {
   background-image: url("https://d17fnq9dkz9hgj.cloudfront.net/uploads/2012/11/152964589-welcome-home-new-cat-632x475.jpg");
+  background-size: cover;
+}
+.cat-two {
+  background-image: url("https://amp.businessinsider.com/images/5654150584307663008b4ed8-750-563.jpg");
+  background-size: cover;
+}
+.cat-three {
+  background-image: url("https://timedotcom.files.wordpress.com/2014/12/ap1109280145869.jpg");
+  background-size: cover;
+}
+.cat-four {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/15/White_Persian_Cat.jpg");
   background-size: cover;
 }
 
@@ -442,7 +496,7 @@ h2.heading-line span {
 }
 
 .fluid-wallpaper {
-  background-image: url("../img/wall-2.jpg");
+  background-image: url("../img/bamboo-3028709.jpg");
   min-height: 400px;
   background-size: cover;
 }
@@ -451,6 +505,10 @@ h2.heading-line span {
   color: white;
   padding-top: 20px;
   padding: 25px 15px;
+}
+
+.detail-card > p {
+  color: white;
 }
 
 .detail-card > h1,
@@ -581,14 +639,20 @@ h6 {
   h1 {
     margin-bottom: 20px;
   }
-
-  .product-filter {
-    flex-direction: column;
+  
+  header .container {
+    position: relative;
+    z-index: 2;
   }
-
-  .sort {
-    align-self: flex-start;
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
   }
 }
-
-/* *** END PRODUCT SECTION *** */
