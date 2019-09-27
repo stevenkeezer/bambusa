@@ -1,5 +1,3 @@
-
-
 body {
   padding-top: 0px;
 }
@@ -10,47 +8,39 @@ section {
   background-color: white;
 }
 
-
-
 .vision {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-    background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  background-color: white;
 }
 
 .vision-text {
-font-size: 50px;
-
-
+  font-size: 50px;
 }
 .text {
-    font-size: 47px;
-    font-family: montserrat;
-    font-weight: 630;
-   
+  font-size: 47px;
+  font-family: montserrat;
+  font-weight: 630;
 }
-
-
 
 p {
-    font-family: montserrat;
+  font-family: montserrat;
 }
-
 
 /* navbar *
 
 /* Top & Bottom Borders Out */
 
-
-.topBotomBordersOut a:before, .topBotomBordersOut a:after {
+.topBotomBordersOut a:before,
+.topBotomBordersOut a:after {
   position: absolute;
   left: 0px;
   width: 100%;
   height: 2px;
-  background: #FFF;
-  content:"";
+  background: #fff;
+  content: "";
   opacity: 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -63,38 +53,39 @@ p {
   bottom: 0px;
   transform: translateY(-10px);
 }
-.topBotomBordersOut a:hover:before, .topBotomBordersOut a:hover:after {
+.topBotomBordersOut a:hover:before,
+.topBotomBordersOut a:hover:after {
   opacity: 1;
   transform: translateY(0px);
 }
 
 .carousel {
-margin: 50px 150px 50px;
+  margin: 50px 150px 50px;
 }
 
 .read {
-    height: 50px;
-    width: 280px;
-    border-radius: 30px;
-    border-style: none;
-    background-color: #338C8C;
-    color: white;
-    font-family: montserrat;
-    font-size: 15px;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  height: 50px;
+  width: 280px;
+  border-radius: 30px;
+  border-style: none;
+  background-color: #338c8c;
+  color: white;
+  font-family: montserrat;
+  font-size: 15px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .read:hover {
-    background-color: #f08b93;
+  background-color: #f08b93;
 }
 
-
 .carousel img {
-height: 500px;
+  height: 500px;
 }
 
 .carousel-caption {
-    margin: 100px;
+  margin: 100px;
 }
 
 /* Header section */
@@ -161,7 +152,6 @@ body {
   overflow-x: hidden;
 
   padding-top: 0px;
-
 }
 ol,
 ul {
@@ -261,6 +251,7 @@ label {
 .product-image {
   position: relative;
   overflow: hidden;
+  width: 120%;
 }
 .product-image:hover img {
   transform: scale(1.1);
@@ -351,7 +342,6 @@ label {
     align-self: flex-start;
   }
 }
-
 
 /* about us begin  */
 .about-us {
@@ -518,7 +508,6 @@ h6 {
   }
 }
 
-
 @media (max-width: 480px) {
   h1 {
     margin-bottom: 20px;
@@ -533,7 +522,9 @@ h6 {
   }
 }
 
-
+@media (max-width: 500px) {
+  .product-header {
+    font-size: 1rem !important;
+  }
+}
 /* *** END PRODUCT SECTION *** */
-
-
