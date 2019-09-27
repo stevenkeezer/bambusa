@@ -8,6 +8,48 @@ section:nth-child(odd) {
   background-color: #f2f2f2;
 }
 
+/* Header section */
+
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
 /* *** Start Product Section *** */
 
 article,
@@ -84,8 +126,13 @@ h6 {
 /* about us begin  */
 .about-us {
   height: 100%;
-  /* background-color: aqua; */
+  background-color: white;
   text-align: center;
+}
+
+.custom-color {
+  background-color: green;
+  padding: 10px 0;
 }
 
 .center-card {
@@ -117,10 +164,24 @@ h6 {
 
 .icon-custom {
   font-size: 20px;
+  display: flex;
+  padding-left: 20px;
 }
 
 .icon-custom a {
   color: black;
+}
+
+.icon-custom span {
+  width: 40px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  align-items: center;
+  margin-right: 20px;
+  margin-top: 10px;
 }
 
 .card-body h2 {
@@ -167,9 +228,34 @@ h2.heading-line span {
 }
 
 .fluid-wallpaper {
-  background-image: url("../image/bamboo-wall.jpg");
+  background-image: url("../image/wall-2.jpg");
   min-height: 400px;
   background-size: cover;
+}
+
+.detail-card {
+  color: white;
+  padding-top: 20px;
+  padding: 25px 15px;
+}
+
+.detail-card > h1, h2, ul {
+  margin: 10px 10px 30px 5px;
+}
+
+.detail-card h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.detail-card ul {
+  padding: 0;
+}
+
+.about-us-avatar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 /* end about us  */
 
