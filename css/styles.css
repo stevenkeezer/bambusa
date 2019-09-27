@@ -1,4 +1,7 @@
 
+body {
+  padding-top: 0px;
+}
 
 section {
   min-height: 600px;
@@ -34,6 +37,36 @@ p {
     font-family: montserrat;
 }
 
+
+/* navbar *
+
+/* Top & Bottom Borders Out */
+
+
+.topBotomBordersOut a:before, .topBotomBordersOut a:after {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #FFF;
+  content:"";
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.topBotomBordersOut a:before {
+  top: 0px;
+  transform: translateY(10px);
+}
+.topBotomBordersOut a:after {
+  bottom: 0px;
+  transform: translateY(-10px);
+}
+.topBotomBordersOut a:hover:before, .topBotomBordersOut a:hover:after {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
 .carousel {
 margin: 50px 150px 50px;
 }
@@ -62,6 +95,7 @@ height: 500px;
 .carousel-caption {
     margin: 100px;
 }
+
 /* Header section */
 
 header {
@@ -123,8 +157,8 @@ section {
 }
 body {
   line-height: 1;
-  padding-top: 65px;
 
+  padding-top: 0px;
 }
 ol,
 ul {
@@ -422,8 +456,7 @@ label {
   }
 }
 
-<<<<<<< HEAD
-=======
+
 @media (max-width: 480px) {
   h1 {
     margin-bottom: 20px;
