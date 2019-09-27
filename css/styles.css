@@ -68,6 +68,7 @@ section {
 body {
   line-height: 1;
   padding-top: 65px;
+  overflow-x: hidden
 }
 ol,
 ul {
@@ -150,15 +151,38 @@ label {
   flex-wrap: wrap;
   margin-bottom: 50px;
   background-color: white !important;
-  border-radius: 30px;
+  border-radius: 200px;
+}
+
+.transition {
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+}
+.img-responsive {
+  width: 100%;
+}
+
+.product-image {
+  position: relative;
+  overflow: hidden;
+}
+.product-image:hover img {
+  transform: scale(1.1);
+}
+.products > img {
+  transform: scale(1);
 }
 
 .product-card {
+  color: #8a8a8a;
   max-height: 340px;
   min-width: 200px;
   display: flex;
   flex-direction: column;
-  border-radius: 30px;
+  border-radius: 300px;
 
   padding: 2%;
   flex: 1 16%;
@@ -179,6 +203,29 @@ label {
 
 .product-info > h5 {
   cursor: pointer;
+}
+
+.myButton {
+  background-color: #44c767;
+  -moz-border-radius: 28px;
+  -webkit-border-radius: 28px;
+  border-radius: 28px;
+  border: 1px solid #18ab29;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 16px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+}
+.myButton:hover {
+  background-color: #5fb831;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
 }
 
 @media (max-width: 920px) {
@@ -353,6 +400,11 @@ label {
 .product-info {
   margin-top: auto;
   text-align: center;
+}
+
+.product-info > h5, h6 {
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
 }
 
 @media (max-width: 920px) {
