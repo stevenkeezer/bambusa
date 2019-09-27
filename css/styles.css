@@ -8,6 +8,12 @@ section {
   background-color: white;
 }
 
+section:nth-child(odd) {
+  -webkit-box-shadow: 0 10px 6px 6px white;
+  -moz-box-shadow: 0 10px 6px 6px white;
+       box-shadow: 0 10px 6px 6px white;
+}
+
 .vision {
   display: flex;
   flex-direction: column;
