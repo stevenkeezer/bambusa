@@ -1,4 +1,4 @@
-✨ <h1 align="center">Bambusa
+✨ Bambusa
   
 
 :thumbsup:Bambusa is a company dedicated to building sustainable products with bamboo.
