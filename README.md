@@ -1,5 +1,7 @@
-<h1>Bambusa is a company dedicated to building sustainable products with bamboo.<h1>
+<center><h1>Bambusa<h1><center>
 
-<strong>This project was built using bootstrap and to practice using Git as a team.<strong>
+<p>Bambusa is a company dedicated to building sustainable products with bamboo.<p>
+
+<p>This project was built using bootstrap and to practice using Git as a team.<p>
 
 https://thirsty-hamilton-44d01e.netlify.com/
