@@ -2,29 +2,60 @@ body {
   padding-top: 0px;
 }
 
-a {
-  color: #fff !important;
+.bg-dark {
+  background-color: #21d192 !important;
 }
-.nav-item {
-  font-family: Century Gothic;
-  margin: 0 auto;
-  padding: 1em 1em;
-  text-align: center;
+
+.navbar-brand {
+  padding-left: 18px !important;
 }
-.nav-item a {
-  color: #fff;
-  text-decoration: none;
-  font: 16px Century Gothic;
-  margin: 0px 10px;
-  padding: 10px 10px;
+
+#line {
+  color: white;
+}
+
+
+.nav-link {
+
+  padding: 8px 0x !important;
+  margin-left: 5px;
+  margin-right: 5px;
+
+}
+header .container-fluid {
   position: relative;
-  z-index: 0;
+  z-index: 2;
 }
+
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+.btn-outline-success {
+  color: #21d192; 
+  border-color: #21d192 !important;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+
 section {
   min-height: 600px;
   height: auto;
   background-color: white;
 }
+
 
 .vision {
   -webkit-box-shadow: 0 10px 15px 7px white;
@@ -43,6 +74,7 @@ section {
 .vision-text {
   font-size: 50px;
 }
+
 .text {
   font-size: 47px;
   font-family: montserrat;
@@ -57,12 +89,13 @@ p {
   top: 0px;
   transform: translateY(10px);
 }
+
 .topBotomBordersOut a:after {
   bottom: 0px;
   transform: translateY(-10px);
 }
-.topBotomBordersOut a:hover:before,
-.topBotomBordersOut a:hover:after {
+
+.topBotomBordersOut a:hover:before, .topBotomBordersOut a:hover:after {
   opacity: 1;
   transform: translateY(0px);
 }
@@ -80,8 +113,7 @@ p {
   color: white;
   font-family: montserrat;
   font-size: 15px;
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .read:hover {
@@ -159,45 +191,35 @@ header .overlay {
 
 /* *** Start Product Section *** */
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
+
 body {
   line-height: 1;
   overflow-x: hidden;
-
   padding-top: 0px;
 }
-ol,
-ul {
+
+ol, ul {
   list-style: none;
 }
-blockquote,
-q {
+
+blockquote, q {
   quotes: none;
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+
+blockquote:before, blockquote:after, q:before, q:after {
   content: ’’;
   content: none;
 }
 
 /* remember to highlight inserts somehow! */
+
 ins {
   text-decoration: none;
 }
+
 del {
   text-decoration: line-through;
 }
@@ -270,6 +292,7 @@ label {
   -o-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
 }
+
 .img-responsive {
   width: 100%;
 }
@@ -279,13 +302,27 @@ label {
   overflow: hidden;
   width: 100%;
 }
+
 .product-image:hover img {
   transform: scale(1.1);
 }
-.products > img {
+
+.products>img {
   transform: scale(1);
 }
 
+.product-card {
+  color: #8a8a8a;
+  max-height: 340px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 300px;
+  padding: 2%;
+  flex: 1 16%;
+  background-color: none !important;
+  /* box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25); */
+}
 .product-image img {
   width: 100%;
   cursor: pointer;
@@ -298,7 +335,7 @@ label {
   text-align: center;
 }
 
-.product-info > h5 {
+.product-info>h5 {
   cursor: pointer;
 }
 
@@ -317,9 +354,11 @@ label {
   text-decoration: none;
   text-shadow: 0px 1px 0px #2f6627;
 }
+
 .myButton:hover {
   background-color: #5fb831;
 }
+
 .myButton:active {
   position: relative;
   top: 1px;
@@ -329,9 +368,7 @@ label {
   .product-card {
     flex: 1 21%;
   }
-
-  .products .product-card:first-child,
-  .products .product-card:nth-child(2) {
+  .products .product-card:first-child, .products .product-card:nth-child(2) {
     flex: 2 46%;
   }
 }
@@ -346,17 +383,16 @@ label {
   h1 {
     margin-bottom: 20px;
   }
-
   .product-filter {
     flex-direction: column;
   }
-
   .sort {
     align-self: flex-start;
   }
 }
 
 /* about us begin  */
+
 .about-us {
   height: 100%;
   background-color: white;
@@ -424,12 +460,7 @@ label {
 .card-body hr {
   border: 0;
   height: 1px;
-  background-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0.75),
-    rgba(0, 0, 0, 0)
-  );
+  background-image: linear-gradient( to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
 .cat-one {
@@ -472,9 +503,7 @@ h2.heading-line span {
   padding: 25px 15px;
 }
 
-.detail-card > h1,
-h2,
-ul {
+.detail-card>h1, h2, ul {
   margin: 10px 10px 30px 5px;
 }
 
@@ -507,13 +536,11 @@ ul {
   .container-border {
     border: none;
   }
-
   .row-custom {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
   }
-
   .border-custom {
     border-top: 1px solid white;
     border-right: 1px solid white;
@@ -521,6 +548,7 @@ ul {
     margin-bottom: 10px;
   }
 }
+
 /* end about us  */
 
 .sort {
@@ -550,9 +578,11 @@ label {
   min-width: 200px;
   display: flex;
   flex-direction: column;
-
   padding: 2%;
   flex: 1 16%;
+  background-color: #fff;
+  /* box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25); */
+
 }
 
 .product-image img {
@@ -564,8 +594,7 @@ label {
   text-align: center;
 }
 
-.product-info > h5,
-h6 {
+.product-info>h5, h6 {
   font-weight: 400;
   font-family: "Lato", sans-serif;
 }
@@ -574,9 +603,7 @@ h6 {
   .product-card {
     flex: 1 21%;
   }
-
-  .products .product-card:first-child,
-  .products .product-card:nth-child(2) {
+  .products .product-card:first-child, .products .product-card:nth-child(2) {
     flex: 2 46%;
   }
 }
@@ -591,6 +618,10 @@ h6 {
   h1 {
     margin-bottom: 20px;
   }
+  @media (max-width: 500px) {
+    .product-header {
+      font-size: 1rem !important;
+    }
 
   header .container {
     position: relative;
@@ -609,6 +640,9 @@ h6 {
   }
 }
 
+
+
+  /* *** END PRODUCT SECTION *** */
 @media (max-width: 500px) {
   .product-header {
     font-size: 1rem !important;
@@ -632,5 +666,5 @@ h6 {
   .product-card:nth-child(2) {
     max-width: 230px;
   }
-}​
+}
 
